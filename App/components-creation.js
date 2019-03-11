@@ -1,4 +1,4 @@
-import React from "react";
+import React, {PureComponent} from "react";
 import ReactDOM from "react-dom";
 
 //-	React.createElement
@@ -34,4 +34,14 @@ class Welcome extends React.Component {
 
   ReactDOM.render(<Welcome/>, app-2);
 
+//pureComponent
 
+class Season extends React.PureComponent {  
+  render() {
+    return <h1>Season</h1>
+  }
+}
+
+Spring = () => {
+  return <h1>Spring</h1>;
+}
