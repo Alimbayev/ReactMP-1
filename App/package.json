@@ -7,8 +7,8 @@
     "start": "node Task1_1",
     "build": "babel src -d lib",
     "build": "webpack --mode production",
-    "build:dev": "webpack --env dev production",
-    "build:prod": "webpack --env prod production",
+    "start": "webpack-dev-server --open --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js",
     "test": "npm run dev"
   },
   "author": "Zarina Zhiyenbayeva",
